@@ -166,3 +166,30 @@ export const SignSay = styled.p`
 // 사용법
 // ${({ theme }) => theme.상수이름.상수요소}
 // 여기서는 colors의 요소를 사용했다.
+
+/* canvas 속성 */
+export const Box = styled.div`
+  // margin-top: 200px;
+  width: 100%;
+  max-width: 390px;
+  height: 100vh;
+`;
+
+/* sign */
+
+/* 3d pages */
+export const InGameButtonStyle = styled.div`
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: ${({ theme }) => theme.colors.marin};
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 18px;
+  border-radius: 10px;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+`;
