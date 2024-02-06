@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { InHouse } from "../../components/3D/InHouse";
 import { Wrapper, Box, InGameButtonStyle } from "../../styles/style";
+import Loading from "../../components/spinner/Loding";
 // import Loading from "../../components/spinner/Loading";
 
 export default function Inside() {
@@ -21,8 +22,15 @@ export default function Inside() {
   return (
     <>
       <Wrapper>
-        {loading &&
-          /*<Loading loadingText={"빵을 생성하고 있습니다..."} />*/ "빵을 생성하고 있습니다."}
+        {loading && (
+          <Loading
+            loadingText={
+              showOrigin
+                ? "빵을 없애고 있습니다..."
+                : "빵을 생성하고 있습니다..."
+            }
+          />
+        )}
         <Box>
           <Canvas camera={{ position: [10, 200, -400] }}>
             <OrbitControls />
