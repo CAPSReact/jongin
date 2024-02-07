@@ -4,17 +4,26 @@ import { OrbitControls } from "@react-three/drei";
 import { InHouse } from "../../components/3D/InHouse";
 import { Wrapper, Box, InGameButtonStyle } from "../../styles/style";
 import Loading from "../../components/spinner/Loding";
+import { useDispatch, useSelector } from "react-redux";
+import { toggle } from "../../items/breadSlice";
+import { addItem } from "../../items/listSlice";
 // import Loading from "../../components/spinner/Loading";
 
 export default function Inside() {
-  const [showOrigin, setShowOrigin] = useState(false);
+  // const [showOrigin, setShowOrigin] = useState(false);
+  const dispatch = useDispatch();
+  const showOrigin = useSelector((state) => state.bread.value); // selector로 bread 값을 가져온다.
+  // 이 때, state는 reducer로 선언한 이름의 value를 가져온다.
+
   const [loading, setLoading] = useState(false);
 
   const handleOrigin = () => {
     setLoading(true);
 
     setTimeout(() => {
-      setShowOrigin(!showOrigin);
+      // setShowOrigin(!showOrigin);
+      dispatch(toggle());
+      if (showOrigin != true) dispatch(addItem());
       setLoading(false);
     }, 2000); // 2초 후에 실행
   };

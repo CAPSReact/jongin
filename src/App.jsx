@@ -3,6 +3,7 @@ import House from "./pages/3D/House";
 import Inside from "./pages/3D/InSide";
 import Home from "./pages/Home";
 import TestPage from "./pages/Test";
+import Board from "./pages/board/Board";
 import Signin from "./pages/sign/Signin";
 import Signup from "./pages/sign/Signup";
 import { Route, Routes } from "react-router-dom";
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/test" element={<TestPage />} />
         <Route path="/inside" element={<Inside />} />
         <Route path="/house" element={<House />} />
+        <Route path="/board" element={<Board />} />
       </Routes>
     </>
   );

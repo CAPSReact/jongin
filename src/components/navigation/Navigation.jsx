@@ -69,7 +69,7 @@ export default function Navigation() {
       <NavigationBar>
         <BtnBox
           onClick={() => {
-            navigate("/home");
+            navigate("/house");
           }}
         >
           <img src={OutSideImage} alt="outside" />
@@ -77,7 +77,7 @@ export default function Navigation() {
         </BtnBox>
         <BtnBox
           onClick={() => {
-            navigate("/signin");
+            navigate("/inside");
           }}
         >
           <img src={InsideImage} alt="inside" />
@@ -85,7 +85,7 @@ export default function Navigation() {
         </BtnBox>
         <BtnBox
           onClick={() => {
-            navigate("/signup");
+            navigate("/board");
           }}
         >
           <img src={BoardImage} alt="borad" />
