@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { useNavigate } from "react-router-dom";
 import { OrbitControls } from "@react-three/drei";
-import { Wrapper, Box, InGameButtonStyle } from "../../styles/style";
+import { Wrapper, Box, InGameButtonStyle } from "../../styles/Style";
 import { OutHouse } from "../../components/3D/OutHouse";
 
 export default function House() {

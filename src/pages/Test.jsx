@@ -1,4 +1,4 @@
-import { ButtonStyle, Circle } from "../styles/style";
+import { ButtonStyle, Circle } from "../styles/Style";
 
 export default function TestPage() {
   return (

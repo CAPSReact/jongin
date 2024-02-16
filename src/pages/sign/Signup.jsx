@@ -9,7 +9,7 @@ import {
   UserSelect,
   Welcome,
   Wrapper,
-} from "../../styles/style";
+} from "../../styles/Style";
 
 export default function Signup() {
   const [id, setId] = useState("");

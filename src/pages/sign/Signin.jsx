@@ -8,7 +8,7 @@ import {
   SignTitle,
   Welcome,
   Wrapper,
-} from "../../styles/style";
+} from "../../styles/Style";
 
 export default function Signin() {
   const [id, setId] = useState("");
