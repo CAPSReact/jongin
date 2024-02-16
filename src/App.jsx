@@ -1,6 +1,6 @@
 import Navigation from "./components/navigation/Navigation";
 import House from "./pages/3D/House";
-import Inside from "./pages/3D/InSide";
+import Inside from "./pages/3D/Inside";
 import Home from "./pages/Home";
 import TestPage from "./pages/Test";
 import Board from "./pages/board/Board";
