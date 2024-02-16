@@ -2,7 +2,7 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { useEffect, useState } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { InHouse } from "../../components/3D/InHouse";
-import { Wrapper, Box, InGameButtonStyle } from "../../styles/style";
+import { Wrapper, Box, InGameButtonStyle } from "../../styles/Style";
 import Loading from "../../components/spinner/Loding";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../items/breadSlice";
